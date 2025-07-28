@@ -139,7 +139,7 @@ $('.question_btn').click(function () {
 });
 
 $('.wrap, .close_btn').click(function () {
-	$('.question').css('display', 'none');
+	$('.question_wrap .question').css('display', 'none');
 });
 
 $('.question_wrap').click(function (e) {
