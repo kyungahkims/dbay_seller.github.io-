@@ -1,0 +1,195 @@
+.total {
+	font-size: 14px;
+
+	span {
+		color: #f53b3b;
+	}
+}
+
+/* btn_wrap */
+.btn_wrap {
+	margin: 16px 0 20px;
+
+	button {
+		font-size: 14px;
+		border-radius: 14px;
+		background-color: #fff;
+		padding: 4px 12px;
+
+		&:not(:last-child) {
+			margin-right: 4px;
+		}
+
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			background: url('../img/ico-drop-down.svg') no-repeat center;
+			margin-left: 8px;
+		}
+	}
+}
+
+/* box */
+.box {
+	padding: 12px;
+
+	&:not(:last-child) {
+		margin-bottom: 12px;
+	}
+
+	.product_wrap {
+		display: flex;
+	}
+
+	.product_img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 46px;
+		height: 46px;
+		min-width: 46px;
+		min-height: 46px;
+		border-radius: 8px;
+		background-color: #f4f4f4;
+		margin-right: 12px;
+
+		img {
+			max-width: 36px;
+			max-height: 36px;
+		}
+	}
+
+	.product_info_wrap {
+
+		.bidding_number {
+			margin-bottom: 7px;
+
+			span {
+				font-size: 10px;
+				color: #888;
+				padding: 2px 10px;
+				border-radius: 4px;
+				border: 1px solid #bbb;
+			}
+		}
+
+		.product_name {
+			font-size: 14px;
+			font-weight: bold;
+			margin-bottom: 4px;
+		}
+
+		.company {
+			display: flex;
+			font-size: 12px;
+			font-weight: 300;
+			color: #999;
+
+			.title {
+				min-width: 45px;
+				color: #000;
+				margin-right: 8px;
+			}
+		}
+	}
+
+	.info {
+		font-size: 14px;
+		font-weight: 500;
+
+		li {
+			display: flex;
+			justify-content: space-between;
+			text-align: right;
+
+			&:not(:last-child) {
+				margin-bottom: 7px;
+			}
+
+			div {
+				text-align: left;
+				font-weight: normal;
+				white-space: nowrap;
+				color: #555;
+				margin-right: 16px;
+			}
+
+			.price {
+				font-size: 16px;
+				font-weight: 500;
+				color: #000;
+
+				span {
+					color: #f53b3b;
+				}
+			}
+		}
+	}
+
+	.tell {
+		display: block;
+		font-size: 14px;
+		text-align: center;
+		color: #fff;
+		border-radius: 24px;
+		background-color: #f53b3b;
+		padding: 8px 0;
+		margin-top: 19px;
+
+		&::before {
+			content: "";
+			width: 12px;
+			height: 12px;
+			display: inline-block;
+			background: url('../img/ico-tel.svg') no-repeat center;
+			margin-right: 12px;
+		}
+
+		&:hover {
+			filter: brightness(1.1);
+		}
+	}
+
+	h5 {
+		font-size: 14px;
+		font-weight: bold;
+		margin-bottom: 14px;
+		color: #202020;
+	}
+
+	input {
+		width: 100%;
+		font-size: 14px;
+		color: #555;
+		border-radius: 4px;
+		border: 1px solid #ddd;
+		padding: 11px 12px;
+		margin-bottom: 16px;
+
+		&:disabled {
+			background-color: #fff;
+		}
+	}
+
+	textarea {
+		width: 100%;
+		height: 244px;
+		font-size: 14px;
+		line-height: 1.43;
+		color: #555;
+		border-radius: 4px;
+		border: 1px solid #ddd;
+		padding: 11px 12px;
+
+		&:disabled {
+			background-color: #fff;
+		}
+	}
+}
+
+/* pop */
+.radio_wrapper {
+	padding: 0 4px;
+}
