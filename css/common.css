@@ -766,7 +766,7 @@ hr {
   top: 25px;
   left: -75px;
   width: 300px;
-  white-space: wrap;
+  white-space: wrap !important;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #fff;
