@@ -6,7 +6,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
+  margin: 8px 0 20px;
 }
 .sell_info .product_img {
   width: 40px;
@@ -26,6 +26,38 @@
   display: flex;
   font-size: 14px;
   font-weight: bold;
+}
+
+/* checkbox */
+.check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+.check input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 16px;
+  height: 16px;
+  background: url("../img/icon-check-off.svg") left center no-repeat;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+}
+.check input[type=checkbox]:checked {
+  background: url("../img/icon-check-on.svg") left center no-repeat;
+}
+.check input[type=checkbox]:disabled {
+  border: 1px solid #d8d8d8;
+  background: none;
+  background-color: #ddd;
 }
 
 /* box */
@@ -113,6 +145,9 @@
 .box textarea.mini {
   height: 200px;
 }
+.box .product_name strong {
+  margin-right: 65px;
+}
 
 /* box2 */
 .box2 {
@@ -181,7 +216,7 @@
   margin-bottom: 6px;
 }
 .box2 .product_wrap .product_info .product_name strong {
-  margin-right: 65px;
+  margin-right: 0;
 }
 .box2 .product_wrap .product_info .product_name .label {
   position: absolute;
@@ -226,17 +261,31 @@
           align-items: center;
   width: 100%;
   font-size: 14px;
-  line-height: 1.43;
+  line-height: 1.36;
   color: #555;
-}
-.box2 .box_form > ul:nth-child(2), .box2 .box_form > ul:nth-child(5) {
-  margin-top: 6px;
+  margin-bottom: 5px;
 }
 .box2 .box_form > ul.mb {
   margin-bottom: 12px;
 }
+.box2 .box_form > ul.mb0 {
+  margin-bottom: 0;
+}
 .box2 .box_form > ul.mt4 {
   margin-top: 4px;
+}
+.box2 .box_form > ul.mt11 {
+  margin-top: 11px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.box2 .box_form > ul.mb9 {
+  margin-bottom: 9px;
+}
+.box2 .box_form > ul.mbt {
+  margin-top: 18px;
+  margin-bottom: 14px;
 }
 .box2 .box_form > ul > li:nth-child(odd) {
   white-space: nowrap;
@@ -246,6 +295,33 @@
   font-weight: 500;
   text-align: right;
   color: #202020;
+}
+.box2 .box_form > ul li.dotted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.box2 .box_form > ul li.dotted::before {
+  content: "";
+  left: 0;
+  top: 10px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #555;
+  margin-right: 5px;
+}
+.box2 .box_form > ul li.red::before {
+  background-color: #f53b3b;
+}
+.box2 .box_form > ul li.line {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 20px;
 }
 .box2 .box_form > ul li .light {
   font-size: 12px;
@@ -261,11 +337,9 @@
           align-items: center;
   font-size: 14px;
   font-weight: 500;
-  color: #202020;
   border-radius: 4px;
   background-color: #f3f3f3;
   padding: 0 8px;
-  margin: 0 5px 0 0;
   white-space: nowrap;
 }
 .box2 .box_form > ul li .s_box input {
@@ -279,13 +353,19 @@
   padding: 5px 0;
   margin: 0;
 }
-.box2 .box_form > ul li.small {
+.box2 .box_form > ul li.small,
+.box2 .box_form > ul li .small {
   font-size: 14px;
 }
-.box2 .box_form > ul li.big {
+.box2 .box_form > ul li.big,
+.box2 .box_form > ul li .big {
   font-size: 16px;
 }
-.box2 .box_form > ul li.small, .box2 .box_form > ul li.big {
+.box2 .box_form > ul li .mini {
+  font-size: 12px;
+}
+.box2 .box_form > ul .small,
+.box2 .box_form > ul .big {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,10 +374,16 @@
           align-items: center;
   font-weight: 500;
 }
-.box2 .box_form > ul li.small .title, .box2 .box_form > ul li.big .title {
+.box2 .box_form > ul .small.mt4,
+.box2 .box_form > ul .big.mt4 {
+  margin-top: 4px;
+}
+.box2 .box_form > ul .small .title,
+.box2 .box_form > ul .big .title {
   min-width: 70px;
 }
-.box2 .box_form > ul li.small div, .box2 .box_form > ul li.big div {
+.box2 .box_form > ul .small div,
+.box2 .box_form > ul .big div {
   width: 18px;
   height: 18px;
   font-size: 11px;
@@ -309,16 +395,24 @@
   background-color: #eee;
   margin: 0 4px;
 }
-.box2 .box_form > ul li.small .plus, .box2 .box_form > ul li.big .plus {
+.box2 .box_form > ul .small div.m_0,
+.box2 .box_form > ul .big div.m_0 {
+  margin-left: 0;
+}
+.box2 .box_form > ul .small .plus,
+.box2 .box_form > ul .big .plus {
   font-size: 11px;
   font-weight: 500;
   color: #ccc;
 }
-.box2 .box_form > ul li .mini {
-  font-size: 12px;
-}
 .box2 .box_form > ul .red {
   color: #f53b3b !important;
+}
+.box2 .box_form > ul .blue {
+  color: #3b6df5 !important;
+}
+.box2 .box_form > ul .blue input {
+  color: #3b6df5 !important;
 }
 .box2 .box_form > ul .black {
   color: #000;
@@ -326,6 +420,31 @@
 .box2 .box_form > ul .radio_wrap5 {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+.box2 .box_form .plus_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 42px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #000;
+  margin: 8px 0;
+}
+.box2 .box_form .cont {
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: -0.24px;
+  color: #999;
+  margin-top: 17px;
 }
 
 .sel_btn {
