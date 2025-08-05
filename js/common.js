@@ -145,3 +145,13 @@ $('.wrap, .close_btn').click(function () {
 $('.question_wrap').click(function (e) {
 	e.stopPropagation();
 });
+
+$(document).ready(function() {
+  $('#checkbox').on('change', function() {
+    if ($(this).is(':checked')) {
+      $('.check_state').css('display', 'flex');
+    } else {
+      $('.check_state').css('display', 'none');
+    }
+  });
+});
