@@ -146,12 +146,12 @@ $('.question_wrap').click(function (e) {
 	e.stopPropagation();
 });
 
-$(document).ready(function() {
-  $('#checkbox').on('change', function() {
-    if ($(this).is(':checked')) {
-      $('.check_state').css('display', 'flex');
-    } else {
-      $('.check_state').css('display', 'none');
-    }
-  });
+/* 견적 보내기 카드 결합 체크박스 */
+$('.estimate_box2 #checkbox').on('change', function () {
+	if ($(this).is(':checked')) {
+		$('.card_plus, .plus_btn, .cont').css('display', 'block');
+		$('.check_state').css('display', 'flex');
+	} else {
+		$('.card_plus, .plus_btn, .check_state, .cont').css('display', 'none');
+	}
 });
