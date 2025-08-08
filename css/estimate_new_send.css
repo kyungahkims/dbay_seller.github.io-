@@ -52,6 +52,11 @@
   border-radius: 8px 8px 0 0;
   padding: 12px 16px;
 }
+.estimate_box1 .blue,
+.estimate_box2 .blue,
+.estimate_box3 .blue {
+  color: #3b6df5;
+}
 .estimate_box1 .blue input,
 .estimate_box1 .blue span,
 .estimate_box2 .blue input,
@@ -59,15 +64,6 @@
 .estimate_box3 .blue input,
 .estimate_box3 .blue span {
   color: #3b6df5;
-}
-.estimate_box1 .blue input:disabled,
-.estimate_box1 .blue span:disabled,
-.estimate_box2 .blue input:disabled,
-.estimate_box2 .blue span:disabled,
-.estimate_box3 .blue input:disabled,
-.estimate_box3 .blue span:disabled {
-  color: #3b6df5 !important;
-  background: #fff;
 }
 .estimate_box1 .red,
 .estimate_box2 .red,
@@ -81,15 +77,6 @@
 .estimate_box3 .red input,
 .estimate_box3 .red span {
   color: #f53b3b;
-}
-.estimate_box1 .red input:disabled,
-.estimate_box1 .red span:disabled,
-.estimate_box2 .red input:disabled,
-.estimate_box2 .red span:disabled,
-.estimate_box3 .red input:disabled,
-.estimate_box3 .red span:disabled {
-  color: #f53b3b !important;
-  background: #fff;
 }
 
 /* estimate_box1 */
@@ -267,6 +254,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  white-space: pre;
 }
 .estimate_box2 .box_body .box_form .box_sub_form li .title::before {
   content: "";
@@ -304,12 +292,6 @@
   border-radius: 4px;
   background-color: #f3f3f3;
   padding: 5px;
-}
-.estimate_box2 .box_body .box_form .box_sub_form li > div input:disabled {
-  color: #202020;
-  background: #fff;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 .estimate_box2 .box_body .box_form .box_sub_form li > div input::-webkit-input-placeholder {
   font-size: 11px;
@@ -428,12 +410,6 @@
   border-radius: 4px;
   background-color: #5d5d5d;
   padding: 4px 12px;
-}
-.estimate_box2 .box_body .box_form4 li.card_plus .box_sub_form li .price input {
-  padding-right: 15px;
-}
-.estimate_box2 .box_body .box_form4 li.card_plus .box_sub_form li .price span {
-  right: 0;
 }
 .estimate_box2 .box_body .box_form4 .box_sub_form li:not(:last-child) {
   margin-bottom: 10px;

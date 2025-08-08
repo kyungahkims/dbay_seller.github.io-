@@ -49,16 +49,11 @@
 	}
 
 	.blue {
+		color: #3b6df5;
 
 		input,
 		span {
 			color: #3b6df5;
-
-			&:disabled {
-				color: #3b6df5 !important;
-				background: #fff;
-			}
-
 		}
 	}
 
@@ -68,15 +63,8 @@
 		input,
 		span {
 			color: #f53b3b;
-
-			&:disabled {
-				color: #f53b3b !important;
-				background: #fff;
-			}
-
 		}
 	}
-
 }
 
 /* estimate_box1 */
@@ -235,6 +223,7 @@
 					.title {
 						display: flex;
 						align-items: center;
+						white-space: pre;
 
 						&::before {
 							content: "";
@@ -273,13 +262,6 @@
 							border-radius: 4px;
 							background-color: #f3f3f3;
 							padding: 5px;
-
-							&:disabled {
-								color: #202020;
-								background: #fff;
-								padding-top: 0;
-								padding-bottom: 0;
-							}
 
 							&::placeholder {
 								font-size: 11px;
@@ -402,16 +384,6 @@
 							padding: 4px 12px;
 						}
 					}
-
-					.box_sub_form li .price {
-						input {
-							padding-right: 15px;
-						}
-
-						span {
-							right: 0;
-						}
-					}
 				}
 			}
 
@@ -434,7 +406,6 @@
 		.box_form5 {
 			padding-top: 18px;
 			border-top: 1px solid #f4f4f4;
-			;
 
 			li {
 				font-size: 16px;
