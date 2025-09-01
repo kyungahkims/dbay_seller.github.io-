@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/estimate.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<title>디아몰</title>
+</head>
+
+<body>
+	<div class="wrap">
+		<header>
+			<div class="flex-c">
+				<a href="#" class="before_page" aria-label="이전 페이지로 돌아가기">
+					<img src="../img/ico-back.svg" alt="이전 페이지로 돌아가기">
+				</a>
+				<h2>결제 내역</h2>
+			</div>
+			<button type="button" aria-label="알림 확인 버튼"><img src="../img/ico_alram.png" alt="알림"></button>
+		</header><!-- header -->
+		<div class="wrapper wrapper2">
+			<div class="payment_box">
+				<ul class="bidding_list">
+					<li>
+						<strong class="title">총 입찰권수</strong>
+						<span class="bidding_num red"><strong>300</strong> 개</span>
+					</li>
+					<li>
+						<span class="title">일반 입찰권</span>
+						<span class="bidding_num green"><strong>150</strong> 개</span>
+					</li>
+					<li>
+						<span class="title">이벤트 입찰권</span>
+						<span class="bidding_num blue"><strong>150</strong> 개</span>
+					</li>
+				</ul>
+				<button type="button">충전하기</button>
+				<div class="calendar_wrap">
+					<div class="calendar"><input type="text" id="dateInput" value=""></div>
+					<span></span>
+					<div class="calendar"><input type="text" id="dateInput2" value=""></div>
+				</div>
+			</div>
+			<div class="payment_wrap">
+				<div class="tab_wrap">
+					<button type="button" class="tab active"><span>전체</span></button>
+					<button type="button" class="tab"><span>충전</span></button>
+					<button type="button" class="tab"><span>사용</span></button>
+					<button type="button" class="tab"><span>미선정</span></button>
+					<button type="button" class="tab"><span>환불</span></button>
+				</div>
+				<div class="total">전체<span>6</span>개</div>
+				<ul class="payment_list">
+					<li>
+						<div class="bidding_date">
+							<div>2025-02-09</div>
+							<span>19:09</span>
+						</div>
+
+						<div class="bidding_wrap">
+							<h5>입찰<span>(대기중)</span></h5>
+							<span class="bidding_num">입찰번호 00000001</span>
+						</div>
+
+						<div class="payment_detail">
+							<div class="num"><strong>-21</strong>개</div>
+							<span class="view">상세보기</span>
+						</div>
+					</li>
+					<li>
+						<div class="bidding_date">
+							<div>2025-02-09</div>
+							<span>19:09</span>
+						</div>
+
+						<div class="bidding_wrap">
+							<h5>미선정</h5>
+							<span class="bidding_num">입찰번호 00000001</span>
+						</div>
+
+						<div class="payment_detail">
+							<div class="num red"><strong>+21</strong>개</div>
+						</div>
+					</li>
+					<li>
+						<div class="bidding_date">
+							<div>2025-02-09</div>
+							<span>19:09</span>
+						</div>
+
+						<div class="bidding_wrap">
+							<h5>입찰<span>(선정완료)</span></h5>
+							<span class="bidding_num">입찰번호 00000001</span>
+						</div>
+
+						<div class="payment_detail">
+							<div class="num"><strong>-21</strong>개</div>
+							<span class="price">6,000원</span>
+						</div>
+					</li>
+
+					<li>
+						<div class="bidding_date">
+							<div>2025-02-09</div>
+							<span>19:09</span>
+						</div>
+
+						<div class="bidding_wrap">
+							<h5>환불</span></h5>
+						</div>
+
+						<div class="payment_detail">
+							<div class="num red"><strong>+21</strong>개</div>
+							<span class="price red">6,000원</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div><!-- wrapper -->
+		<nav>
+			<ul>
+				<li><a href="#">홈</a></li>
+				<li><a href="#" class="active" aria-current="page">견적요청</a></li>
+				<li><a href="#">상품등록</a></li>
+				<li><a href="#">통계</a></li>
+				<li><a href="#">MY</a></li>
+			</ul>
+		</nav><!-- nav -->
+	</div><!-- wrap -->
+
+	<div class="modal_wrap">
+		<div class="pop">
+			<h3>정렬순서</h3>
+			<div class="radio_wrap radio_wrap1">
+				<span>
+					<input type="radio" id="radio1" name="sorting" checked>
+					<label for="radio1">최신순</label>
+				</span>
+				<span>
+					<input type="radio" id="radio2" name="sorting">
+					<label for="radio2">견적적은순</label>
+				</span>
+				<span>
+					<input type="radio" id="radio3" name="sorting">
+					<label for="radio3">마감임박순</label>
+				</span>
+			</div>
+			<hr>
+			<h3>마감 여부</h3>
+			<div class="radio_wrap radio_wrap1">
+				<span>
+					<input type="radio" id="radio4" name="sorting2" checked>
+					<label for="radio4">진행중</label>
+				</span>
+				<span>
+					<input type="radio" id="radio5" name="sorting2">
+					<label for="radio5">마감</label>
+				</span>
+			</div>
+			<hr>
+			<h3>제품명 검색</h3>
+			<div class="search">
+				<input type="text" placeholder="">
+				<button type="button" aria-label="검색 버튼"><img src="../img/ico-search.png" alt="검색"></button>
+				<ul class="search_list">
+					<li><span>아이폰15</span></li>
+					<li><span>아이폰 15</span>, 126GB</li>
+					<li><span>아이폰 15</span>, 256GB</li>
+					<li><span>아이폰 15</span>, 256GB</li>
+					<li><span>아이폰 15</span>, 256GB</li>
+				</ul>
+			</div>
+			<div class="result_wrap">
+				<button type="button" aria-label="검색 결과 삭제 버튼">애플</button>
+				<button type="button" aria-label="검색 결과 삭제 버튼">아이폰15</button>
+				<button type="button" aria-label="검색 결과 삭제 버튼">아이폰14</button>
+			</div>
+			<button type="button" class="sel_btn">선택완료</button>
+		</div>
+	</div><!-- modal_wrap -->
+
+	<script src="../js/common.js"></script>
+	<script>
+		/* 날짜 선택 라이브러리 */
+		$('#dateInput, #dateInput2').daterangepicker({
+			singleDatePicker: true,
+			alwaysShowCalendars: true,
+			showCustomRangeLabel: false,
+			autoApply: true,
+			locale: {
+				format: 'YYYY-MM-DD',
+				daysOfWeek: ['일', '월', '화', '수', '목', '금', '토'],
+				monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			}
+		});
+	</script>
+</body>
+
+</html>
