@@ -97,6 +97,7 @@
   padding: 20px 27px 22px;
   border-radius: 8px;
   border: 1px solid #f4f4f4;
+  cursor: pointer;
 }
 .my_link .bidding_list li {
   display: -webkit-box;

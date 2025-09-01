@@ -48,6 +48,7 @@ header .bidding_num.red strong {
 /* bidding_list */
 .bidding_list {
   padding: 18px 10px 22px;
+  cursor: pointer;
 }
 .bidding_list li {
   display: -webkit-box;
