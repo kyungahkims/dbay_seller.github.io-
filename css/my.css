@@ -84,6 +84,7 @@
   background-color: #fff;
   padding: 0 16px;
   padding-bottom: 24px;
+  /* bidding_list */
 }
 .my_link a {
   display: block;
@@ -92,7 +93,12 @@
   border-radius: 8px;
   background-color: #f4f4f4;
 }
-.my_link .point_wrap {
+.my_link .bidding_list {
+  padding: 20px 27px 22px;
+  border-radius: 8px;
+  border: 1px solid #f4f4f4;
+}
+.my_link .bidding_list li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,34 +108,52 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 12px 16px;
 }
-.my_link .point_wrap .point {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 18px;
+.my_link .bidding_list li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.my_link .bidding_list li strong.title {
+  font-size: 14px;
+  color: #202020;
+}
+.my_link .bidding_list li .title {
+  font-size: 12px;
+  color: #555;
+}
+.my_link .bidding_num {
+  font-size: 12px;
   font-weight: bold;
 }
-.my_link .point_wrap .point::before {
+.my_link .bidding_num::before {
   content: "";
   width: 16px;
-  height: 16px;
-  background: url("../img/ico-point.svg") no-repeat center;
-  margin-right: 4px;
-}
-.my_link .point_wrap .point::after {
-  content: "";
-  width: 12px;
   height: 12px;
-  background: url("../img/btn-enter.svg") no-repeat center;
-  margin-left: 4px;
+  display: inline-block;
+  margin-right: 9px;
+}
+.my_link .bidding_num.red strong {
+  font-size: 20px;
+  color: #f53b3b;
+}
+.my_link .bidding_num.red::before {
+  background: url("../img/ico-ticket.svg") no-repeat center;
+}
+.my_link .bidding_num.green strong {
+  font-size: 14px;
+  color: #006e51;
+}
+.my_link .bidding_num.green::before {
+  background: url("../img/ico-ticket-02.svg") no-repeat center;
+}
+.my_link .bidding_num.blue strong {
+  font-size: 14px;
+  color: #3b85f5;
+}
+.my_link .bidding_num.blue::before {
+  background: url("../img/ico-ticket-03.svg") no-repeat center;
 }
 .my_link .flex {
-  margin-top: 8px;
+  margin-top: 10px;
   -webkit-column-gap: 8px;
      -moz-column-gap: 8px;
           column-gap: 8px;
@@ -165,7 +189,9 @@
   margin-top: 8px;
   background-color: #fff;
 }
+.list li button,
 .list li a {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,9 +201,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: transparent;
   padding: 16px;
   cursor: pointer;
 }
+.list li button::after,
 .list li a::after {
   content: "";
   width: 12px;
@@ -186,8 +214,13 @@
   background: url("../img/ico-my-more-on.svg") no-repeat center;
 }
 
-/* logout_btn, withdrawal_btn */
-.logout_btn,
+.footer_info {
+  font-size: 12px;
+  color: #aaa;
+  padding: 16px;
+}
+
+/* withdrawal_btn */
 .withdrawal_btn {
   font-size: 12px;
   line-height: 0.9;

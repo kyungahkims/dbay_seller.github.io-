@@ -1,0 +1,243 @@
+.payment_box {
+  padding: 20px 16px 30px;
+  /* bidding_list */
+}
+.payment_box .bidding_list {
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 14px 10px 15px;
+}
+.payment_box .bidding_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.payment_box .bidding_list li:not(:last-child) {
+  margin-bottom: 13px;
+}
+.payment_box .bidding_list li strong.title {
+  font-size: 14px;
+  color: #202020;
+}
+.payment_box .bidding_list li .title {
+  font-size: 12px;
+  color: #555;
+}
+.payment_box .bidding_num {
+  font-size: 12px;
+  font-weight: bold;
+}
+.payment_box .bidding_num::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  display: inline-block;
+  margin-right: 9px;
+}
+.payment_box .bidding_num.red strong {
+  font-size: 20px;
+  color: #f53b3b;
+}
+.payment_box .bidding_num.red::before {
+  background: url("../img/ico-ticket.svg") no-repeat center;
+}
+.payment_box .bidding_num.green strong {
+  font-size: 14px;
+  color: #006e51;
+}
+.payment_box .bidding_num.green::before {
+  background: url("../img/ico-ticket-02.svg") no-repeat center;
+}
+.payment_box .bidding_num.blue strong {
+  font-size: 14px;
+  color: #3b85f5;
+}
+.payment_box .bidding_num.blue::before {
+  background: url("../img/ico-ticket-03.svg") no-repeat center;
+}
+.payment_box button {
+  width: 100%;
+  height: 48px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 8px;
+  background-color: #f53b3b;
+  margin: 15px 0 40px;
+}
+
+.payment_wrap {
+  background-color: #fff;
+}
+.payment_wrap .total {
+  font-size: 14px;
+  padding: 22px 16px 10px;
+}
+.payment_wrap .total span {
+  color: #f53b3b;
+  margin-left: 3px;
+}
+
+/* tab_wrap */
+.tab_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 1px solid #f4f4f4;
+}
+.tab_wrap .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+  width: 100%;
+}
+.tab_wrap .tab span {
+  position: relative;
+  top: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #aaa;
+  padding: 10px 0;
+}
+.tab_wrap .tab.active span {
+  color: #202020;
+  border-bottom: 2px solid #f53b3b;
+}
+
+.payment_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 16px 21px;
+  cursor: pointer;
+}
+.payment_list li:not(:last-child) {
+  border-bottom: 1px solid #f4f4f4;
+}
+.payment_list li .bidding_date {
+  font-size: 12px;
+  font-weight: 300;
+  color: #bbb;
+  margin-right: 37px;
+}
+.payment_list li .bidding_wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.payment_list li .bidding_wrap h5 {
+  font-size: 16px;
+  font-weight: normal;
+}
+.payment_list li .bidding_wrap h5 span {
+  font-size: 12px;
+  margin-left: 4px;
+}
+.payment_list li .bidding_wrap .bidding_num {
+  font-size: 10px;
+  color: #888;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+  padding: 3px 9px;
+  margin-top: 6px;
+}
+.payment_list li .payment_detail {
+  text-align: right;
+}
+.payment_list li .payment_detail .num {
+  font-size: 12px;
+  color: #0076ff;
+}
+.payment_list li .payment_detail .num strong {
+  font-size: 16px;
+}
+.payment_list li .payment_detail .view {
+  font-size: 12px;
+}
+.payment_list li .payment_detail .view::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background: url("../img/btn-detail2.svg") no-repeat center;
+  margin-left: 2px;
+}
+.payment_list li .payment_detail .price {
+  font-size: 12px;
+  color: #0076ff;
+}
+.payment_list li .payment_detail .red {
+  color: #f53b3b;
+}
+
+/* calendar_wrap */
+.calendar_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+.calendar_wrap input {
+  width: 100%;
+  font-size: 14px;
+  color: #777;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 10px 32px 10px 16px;
+}
+.calendar_wrap .calendar {
+  position: relative;
+}
+.calendar_wrap .calendar::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  width: 17px;
+  height: 17px;
+  background: url("../img/ico-calendar.svg") no-repeat center;
+}
+.calendar_wrap span::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../img/ico-tilde.svg") no-repeat center;
+  margin: 0 8px;
+}
+
+.ranges {
+  display: none;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover,
+.daterangepicker .ranges li.active {
+  background-color: #f53b3b !important;
+}/*# sourceMappingURL=estimate.css.map */
