@@ -39,6 +39,10 @@
           align-items: center;
   margin-bottom: 16px;
 }
+.filter_wrap .info {
+  font-size: 11px;
+  color: #999;
+}
 .filter_wrap .check {
   display: -webkit-box;
   display: -ms-flexbox;

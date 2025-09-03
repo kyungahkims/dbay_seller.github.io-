@@ -23,21 +23,6 @@
   background-color: transparent;
 }
 
-header .bidding_num.red {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 14px;
-  margin-right: 13px;
-}
-header .bidding_num.red strong {
-  font-size: 14px;
-  margin: 0 3px;
-}
-
 .seller_bidding {
   font-size: 16px;
   font-weight: normal;

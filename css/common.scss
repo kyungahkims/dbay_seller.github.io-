@@ -153,6 +153,46 @@ header {
 	button {
 		background-color: transparent;
 	}
+
+	.bidding_num.red {
+		display: inline-flex;
+		align-items: center;
+		font-size: 14px;
+		font-weight: bold;
+		margin-right: 13px;
+
+		&::before {
+			content: "";
+			width: 16px;
+			height: 12px;
+			display: inline-block;
+			margin-right: 9px;
+			background: url('../img/ico-ticket.svg') no-repeat center;
+		}
+
+		strong {
+			font-size: 14px;
+			color: #f53b3b;
+			margin: 0 3px;
+		}
+	}
+
+	.notification_btn {
+		position: relative;
+
+		&.active {
+			&::after {
+				content: "";
+				position: absolute;
+				top: -2px;
+				right: 0px;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: #f53b3b;
+			}
+		}
+	}
 }
 
 /* wrapper */
