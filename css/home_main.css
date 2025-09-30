@@ -57,37 +57,36 @@
   font-size: 12px;
   color: #555;
 }
-
-.bidding_num {
+.bidding_list .bidding_num {
   font-size: 12px;
   font-weight: bold;
 }
-.bidding_num::before {
+.bidding_list .bidding_num::before {
   content: "";
   width: 16px;
   height: 12px;
   display: inline-block;
   margin-right: 9px;
 }
-.bidding_num.red strong {
+.bidding_list .bidding_num.red strong {
   font-size: 20px;
   color: #f53b3b;
 }
-.bidding_num.red::before {
+.bidding_list .bidding_num.red::before {
   background: url("../img/ico-ticket.svg") no-repeat center;
 }
-.bidding_num.green strong {
+.bidding_list .bidding_num.green strong {
   font-size: 14px;
   color: #006e51;
 }
-.bidding_num.green::before {
+.bidding_list .bidding_num.green::before {
   background: url("../img/ico-ticket-02.svg") no-repeat center;
 }
-.bidding_num.blue strong {
+.bidding_list .bidding_num.blue strong {
   font-size: 14px;
   color: #3b85f5;
 }
-.bidding_num.blue::before {
+.bidding_list .bidding_num.blue::before {
   background: url("../img/ico-ticket-03.svg") no-repeat center;
 }
 

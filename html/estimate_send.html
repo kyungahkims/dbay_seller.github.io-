@@ -9,166 +9,282 @@
 	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 	<script src="../js/jquery-3.5.1.min.js"></script>
-	<title>디아몰</title>
+	<title>디베이</title>
 </head>
 
 <body>
 	<div class="wrap">
 		<header>
 			<div class="flex-c">
-				<a href="#" class="before_page" aria-label="이전 페이지로 돌아가기">
-					<img src="../img/ico-back.svg" alt="이전 페이지로 돌아가기">
-				</a>
-				<h2>견적 보내기</h2>
+				<a href="#" class="logo"><img src="../img/logo-dbay.png" alt="디베이, 전자제품 최저가 견적"></a>
+				<div class="mo">
+					<a href="#" class="before_page" aria-label="이전 페이지"></a>
+					<h2>견적 보내기</h2>
+				</div>
 			</div>
-			<button type="button" aria-label="알림 확인 버튼"><img src="../img/ico_alram.png" alt="알림"></button>
+			<ul class="pc_wrap">
+				<li class="active"><a href="#">홈</a></li>
+				<li><a href="#">견적요청</a></li>
+				<li><a href="#">자동입찰</a></li>
+				<li><a href="#">통계</a></li>
+				<li><a href="#">MY</a></li>
+				<li>
+					<a href="#" aria-label="채팅" class="chat_link"></a>
+					<a href="#" aria-label="알림" class="notification_btn active"></a>
+				</li>
+			</ul>
+			<div class="btn_wrap">
+				<span class="bidding_num red">총<strong>300</strong>개</span>
+				<a href="#" aria-label="채팅" class="chat_link"></a>
+				<a href="#" aria-label="알림" class="notification_btn active"></a>
+			</div>
 		</header><!-- header -->
 		<div class="wrapper">
-			<div class="sell_info">
-				<div class="product_img"><img src="../img/img-profile-01.png" alt="구매자 프로필" class="img"></div>
+			<div class="pc">
 				<div>
-					<div class="num">장기동</div>
-					<div class="product_name">신념있는 스파게티</div>
-				</div>
-			</div><!-- sell_info -->
-			<div class="box box2">
-				<h4 class="box_header">고객 요청 사항</h4>
-				<div class="product_wrap">
-					<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
-					<ul class="product_info">
-						<li class="product_name"><strong>아이폰15</strong></li>
-						<li><span class="name">모델번호</span>U132806471</li>
-						<li><span class="name">모델색상</span>
-							<div class="color_group"><span class="color pink" aria-label="분홍색" role="img"></span></div>
-						</li>
-						<li><span class="name">모델번호</span>U132806471</li>
-						<li><span class="name">모델번호</span>U132806471</li>
-					</ul>
-				</div>
-				<div class="box_form">
-					<ul>
-						<li>제품명</li>
-						<li>아이폰15 128GB</li>
-					</ul>
-					<ul>
-						<li>출고가</li>
-						<li>1,698,400 원</li>
-					</ul>
-					<hr>
-					<ul>
-						<li>요금제</li>
-						<li>5G 다이렉드 46 (LGU+)</li>
-					</ul>
-					<ul>
-						<li>기본 요금</li>
-						<li>48,000 원</li>
-					</ul>
+					<div class="flex-c">
+						<a href="#" class="before_page" aria-label="이전 페이지"></a>
+						<h2 class="pc_title">견적 보내기</h2>
+					</div>
+					<span class="bidding_num red">총<strong>300</strong>개</span>
 				</div>
 			</div>
-			<div class="box box2">
-				<h4 class="box_header black">견적서</h4>
-				<div class="box_form">
-					<ul>
-						<li class="red">매장 지원금(견적가)</li>
-						<li><span class="s_box red"><input class="red" type="text" value="-  1,698,400 "> 원</span></li>
-					</ul>
-					<ul>
-						<li>공시 지원금</li>
-						<li><span class="s_box"><input type="text" value="-  1,698,400"> 원</span></li>
-					</ul>
-					<hr>
-					<ul>
-						<li>할부 원금</li>
-						<li>1,698,400 원</li>
-					</ul>
-					<hr>
-					<ul class="mb">
-						<li>할부 기간(개월)</li>
-						<li class="radio_wrap radio_wrap5">
-							<label>
-								<input type="radio" name="installment" value="0">
-								<span>0</span>
-							</label>
-							<label>
-								<input type="radio" name="installment" value="12">
-								<span>12</span>
-							</label>
-							<label>
-								<input type="radio" name="installment" value="18">
-								<span>18</span>
-							</label>
-							<label>
-								<input type="radio" name="installment" value="24" checked>
-								<span>24</span>
-							</label>
-							<label>
-								<input type="radio" name="installment" value="30">
-								<span>30</span>
-							</label>
-							<label>
-								<input type="radio" name="installment" value="36">
-								<span>36</span>
-							</label>
-							<label>
-								<input type="radio" name="installment" value="48">
-								<span>48</span>
-							</label>
-						</li>
-					</ul>
-					<ul>
-						<li class="flex-c">할부 이자<div class="question_wrap">
-								<button type="button" aria-label="상세 설명 보기" class="question_btn"></button>
-								<div class="question">
-									<button type="button" aria-label="상세 설명 닫기" class="close_btn"></button>
-									<ul>
-										<li>휴대폰 할부금을 통신료와 함께 납부할 때 연 5.9%의 수수료가 발생합니다.</li>
-										<li>신용카드 결제 시에는 해당 카드사의 수수료 정책을 따릅니다.</li>
-										<li>계산된 금액은 일의 자리 숫자를 빼고 표시한 것이므로 실제 청구 금액과 다를 수 있습니다.</li>
-									</ul>
+			<div class="inner_wrapper">
+				<div class="sell_info">
+					<div class="product_img"><img src="../img/img-profile-01.png" alt="구매자 프로필" class="img"></div>
+					<div>
+						<div class="num">장기동</div>
+						<div class="product_name">신념있는 스파게티</div>
+					</div>
+				</div><!-- sell_info -->
+				<div class="box box2">
+					<h4 class="box_header">고객 요청 사항</h4>
+					<div class="product_wrap">
+						<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
+						<ul class="product_info">
+							<li class="product_name"><strong>아이폰15</strong></li>
+							<li><span class="name">모델번호</span>U132806471</li>
+							<li><span class="name">모델색상</span>
+								<div class="color_group"><span class="color pink" aria-label="분홍색" role="img"></span></div>
+							</li>
+							<li><span class="name">구매유형</span>번호이동</li>
+							<li><span class="name">월요금제</span>최대 혜택 요금제 추천</li>
+						</ul>
+					</div>
+					<div class="box_form">
+						<ul>
+							<li>출고가</li>
+							<li>1,698,400 원</li>
+						</ul>
+						<ul>
+							<li>희망 약정 기간</li>
+							<li>24개월</li>
+						</ul>
+						<!-- <hr> -->
+						<ul>
+							<li>이용 중인 통신사</li>
+							<li>LGU+</li>
+						</ul>
+						<ul>
+							<li>희망 통신사</li>
+							<li>SKT</li>
+						</ul>
+						<ul>
+							<li>가입 유형</li>
+							<li>본인 (성인)</li>
+						</ul>
+						<ul>
+							<li>희망하는 혜택</li>
+							<li>높은 총 지원금</li>
+						</ul>
+					</div>
+				</div>
+				<div class="box box2">
+					<h4 class="box_header black">견적서</h4>
+					<div class="box_form">
+						<ul>
+							<li class="big black">총 지원금</li>
+							<li class="big red">748,400 원</li>
+						</ul>
+						<ul>
+							<li class="red dotted">매장 지원금</li>
+							<li class="blue"><span class="s_box"><input type="text" value="-  1,698,400">&nbsp;원</span></li>
+						</ul>
+						<ul>
+							<li class="red dotted">공시 지원금</li>
+							<li class="blue"><span class="s_box"><input type="text" value="-  1,698,400">&nbsp;원</span></li>
+						</ul>
+						<hr>
+						<ul>
+							<li>총 할부 원금</li>
+							<li>1,698,400 원</li>
+						</ul>
+						<ul>
+							<li class="flex-c">총 할부 이자<div class="question_wrap">
+									<button type="button" aria-label="상세 설명 보기" class="question_btn"></button>
+									<div class="question">
+										<button type="button" aria-label="상세 설명 닫기" class="close_btn"></button>
+										<ul>
+											<li>휴대폰 할부금을 통신료와 함께 납부할 때 연 5.9%의 수수료가 발생합니다.</li>
+											<li>신용카드 결제 시에는 해당 카드사의 수수료 정책을 따릅니다.</li>
+											<li>계산된 금액은 일의 자리 숫자를 빼고 표시한 것이므로 실제 청구 금액과 다를 수 있습니다.</li>
+										</ul>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li>
-							<div>1,698,400 원</div>
-							<div class="light">분할상환수수료(원리금균등,연 5.9%)</div>
-						</li>
-					</ul>
-					<hr>
-					<ul>
-						<li class="small black"><span class="title">월 할부금</span>
-							<div>1</div>
-						</li>
-						<li>10,940 원</li>
-					</ul>
-					<ul class="mt4">
-						<li class="small black"><span class="title">월 통신요금</span>
-							<div>2</div>
-						</li>
-						<li>10,940 원</li>
-					</ul>
-					<hr>
-					<ul>
-						<li class="big black">월 청구액 <div>1</div><span class="plus">+</span>
-							<div>2</div>
-						</li>
-						<li class="big red">10,940 원</li>
+							</li>
+							<li><span class="s_box"><input type="text" value="-  1,698,400">&nbsp;원</span></li>
+						</ul>
+						<ul>
+							<li>총 할부금<span class="mini">(원금+이자)</span></li>
+							<li>748,400 원</li>
+						</ul>
+						<!-- <hr>
+						<ul class="mb">
+							<li>할부 기간(개월)</li>
+							<li class="radio_wrap radio_wrap5">
+								<label>
+									<input type="radio" name="installment" value="0">
+									<span>0</span>
+								</label>
+								<label>
+									<input type="radio" name="installment" value="12">
+									<span>12</span>
+								</label>
+								<label>
+									<input type="radio" name="installment" value="18">
+									<span>18</span>
+								</label>
+								<label>
+									<input type="radio" name="installment" value="24" checked>
+									<span>24</span>
+								</label>
+								<label>
+									<input type="radio" name="installment" value="30">
+									<span>30</span>
+								</label>
+								<label>
+									<input type="radio" name="installment" value="36">
+									<span>36</span>
+								</label>
+								<label>
+									<input type="radio" name="installment" value="48">
+									<span>48</span>
+								</label>
+							</li>
+						</ul>
+						<ul>
+							<li class="flex-c">할부 이자<div class="question_wrap">
+									<button type="button" aria-label="상세 설명 보기" class="question_btn"></button>
+									<div class="question">
+										<button type="button" aria-label="상세 설명 닫기" class="close_btn"></button>
+										<ul>
+											<li>휴대폰 할부금을 통신료와 함께 납부할 때 연 5.9%의 수수료가 발생합니다.</li>
+											<li>신용카드 결제 시에는 해당 카드사의 수수료 정책을 따릅니다.</li>
+											<li>계산된 금액은 일의 자리 숫자를 빼고 표시한 것이므로 실제 청구 금액과 다를 수 있습니다.</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div>1,698,400 원</div>
+								<div class="light">분할상환수수료(원리금균등,연 5.9%)</div>
+							</li>
+						</ul> -->
+						<hr>
+						<ul class="mb">
+							<li class="small black"><span class="title">월 할부금</span>
+								<div>1</div>
+							</li>
+							<li>10,940 원</li>
+						</ul>
+						<ul class="mb">
+							<li class="small black"><span class="title">월 통신요금</span>
+								<div>2</div>
+							</li>
+							<li>10,940 원</li>
+						</ul>
+						<ul class="mb9">
+							<li class="dotted">요금제 상품명</li>
+							<li class="line">다이렉트 5G 76(유튜브다이렉트 5G 76(유튜브</li>
+						</ul>
+						<ul class="mb9">
+							<li class="dotted">테더링/공유</li>
+							<li>100GB</li>
+						</ul>
+						<ul class="mb9">
+							<li class="dotted">집/이동전화</li>
+							<li>무제한</li>
+						</ul>
+						<ul class="mb9">
+							<li class="dotted">영상/부가통화</li>
+							<li>300분</li>
+						</ul>
+						<ul class="mb9">
+							<li class="dotted">문자</li>
+							<li>기본제공</li>
+						</ul>
+						<ul class="mb9">
+							<li class="dotted">월 통신요금</li>
+							<li>65,000 원</li>
+						</ul>
+						<ul class="mbt">
+							<li class="small black"><span class="title">카드 결합 할인</span>
+								<div>3</div>
+							</li>
+							<li class="check"><input type="checkbox" id="checkbox" checked></li>
+						</ul>
+						<ul class="check_state mb9">
+							<li class="dotted">카드사</li>
+							<li>하나카드 (다모아 카드)</li>
+						</ul>
+						<ul class="check_state mb9">
+							<li class="dotted">카드결합 할인액</li>
+							<li class="blue">-10,000원</li>
+						</ul>
+						<ul class="check_state mb9">
+							<li class="dotted">카드사2</li>
+							<li>무제한</li>
+						</ul>
+						<ul class="check_state mb9">
+							<li class="dotted">카드결합 할인액2</li>
+							<li class="blue">-10,000원</li>
+						</ul>
+						<button type="button" class="check_state plus_btn">+ 카드사 추가</button>
+						<hr>
+						<ul class="mt4 mb0">
+							<li class="big black">월 청구액 <div>1</div><span class="plus">+</span>
+								<div>2</div>
+							</li>
+							<li class="big red">10,940 원</li>
+						</ul>
+						<ul class="check_state mt11">
+							<li>
+								<div class="big black">카드 결합 월 청구액 </div>
+								<div class="big black mt4">
+									<div class="m_0">1</div><span class="plus">+</span>
+									<div>2</div><span class="plus">-</span>
+									<div>3</div>
+								</div>
+							</li>
+							<li class="big red">10,940 원</li>
+						</ul>
+						<p class="check_state cont">*최대 할인 카드사 결합 금액으로 반영됩니다.</p>
+					</div>
+				</div>
+				<div class="box">
+					<ul class="input_group">
+						<li class="name">견적입력</li>
+						<li><span class="input_line"><input type="text" value="1,698,400"> 원</span></li>
 					</ul>
 				</div>
+				<div class="box">
+					<h5>부가 서비스</h5>
+					<input type="text" value="필수백L1(지니) 9,900원  2개월 유지 필수">
+					<h5>기타조건</h5>
+					<textarea>현금개통기준, 카드 할부개통시 +5만원추가됨. 당일 개통기준 기기반남X, 할부36,48개월, 제휴카드 24개월 공시지원 개통기준 3개월(95일) 11만원 요금제 사용이후 +9만원으로 3개월 사용 6개월 이후 최대 49,000원까지 요금제 내릴수 있습니다. 추가문의는 채팅상담 부탁드립니다.</textarea>
+				</div><!-- box -->
+				<button type="button" class="dispath sel_btn">견적 발송</button>
 			</div>
-			<div class="box">
-				<ul class="input_group">
-					<li class="name">견적입력</li>
-					<li><span class="input_line"><input type="text" value="1,698,400"> 원</span></li>
-				</ul>
-			</div>
-			<div class="box">
-				<h3>서비스 입력</h3>
-				<h5>부가 서비스</h5>
-				<input type="text" value="필수백L1(지니) 9,900원  2개월 유지 필수">
-				<h5>기타조건</h5>
-				<textarea>현금개통기준, 카드 할부개통시 +5만원추가됨. 당일 개통기준 기기반남X, 할부36,48개월, 제휴카드 24개월 공시지원 개통기준 3개월(95일) 11만원 요금제 사용이후 +9만원으로 3개월 사용 6개월 이후 최대 49,000원까지 요금제 내릴수 있습니다. 추가문의는 채팅상담 부탁드립니다.</textarea>
-			</div><!-- box -->
-			<button type="button" class="dispath sel_btn">견적 발송</button>
 		</div><!-- wrapper -->
 		<nav>
 			<ul>

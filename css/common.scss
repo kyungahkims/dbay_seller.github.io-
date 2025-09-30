@@ -124,61 +124,79 @@ body {
 
 /* wrap */
 .wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	position: relative;
-	max-width: 460px;
+	max-width: 600px;
 	min-width: 280px;
 	width: 100%;
 	height: 100%;
 	margin: auto;
-	background-color: #f4f4f4;
+	background-color: #fff;
 }
 
 /* header */
 header {
+	position: fixed;
+	left: 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	background-color: #fff;
-	padding: 40px 16px 16px 16px;
+	width: 100%;
+	background-color: #f53b3b;
+	padding: 17px 16px;
+	z-index: 999;
+
+	.mo {
+		display: none;
+		align-items: center;
+	}
+
+	.pc_wrap {
+		display: flex;
+		align-items: center;
+		column-gap: 46px;
+		margin-left: 40px;
+
+		li {
+			display: flex;
+			font-size: 16px;
+			font-weight: 500;
+			color: #fff;
+			cursor: pointer;
+
+			&.active {
+				color: #f7ff00;
+			}
+
+			&:last-child {
+				display: flex;
+				align-items: center;
+				column-gap: 20px;
+			}
+		}
+	}
 
 	h2 {
 		font-size: 18px;
 		font-weight: 500;
+		margin-left: 16px;
 	}
 
-	.before_page {
-		margin-right: 16px;
-	}
-
-	button {
-		background-color: transparent;
-	}
-
-	.bidding_num.red {
-		display: inline-flex;
-		align-items: center;
-		font-size: 14px;
-		font-weight: bold;
-		margin-right: 13px;
-
-		&::before {
-			content: "";
-			width: 16px;
-			height: 12px;
-			display: inline-block;
-			margin-right: 9px;
-			background: url('../img/ico-ticket.svg') no-repeat center;
-		}
-
-		strong {
-			font-size: 14px;
-			color: #f53b3b;
-			margin: 0 3px;
-		}
+	.chat_link {
+		width: 24px;
+		height: 23px;
+		display: inline-block;
+		background: url('../img/icon-main-chat.svg') no-repeat center;
 	}
 
 	.notification_btn {
 		position: relative;
+		width: 24px;
+		height: 24px;
+		display: inline-block;
+		background: url('../img/ico-alram.png') no-repeat center;
 
 		&.active {
 			&::after {
@@ -189,31 +207,92 @@ header {
 				width: 10px;
 				height: 10px;
 				border-radius: 50%;
-				background-color: #f53b3b;
+				background-color: #fff700;
 			}
 		}
+	}
+
+	button {
+		background-color: transparent;
+	}
+
+	.btn_wrap {
+		display: none;
+		align-items: center;
+		column-gap: 14px;
+	}
+}
+
+.before_page {
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	background: url('../img/ico-back.svg') no-repeat center;
+}
+
+.bidding_num.red {
+	display: inline-flex;
+	align-items: center;
+	font-size: 14px;
+	font-weight: bold;
+
+	&::before {
+		content: "";
+		position: relative;
+		top: 1px;
+		width: 16px;
+		height: 12px;
+		margin-right: 9px;
+		background: url('../img/ico-ticket.svg') no-repeat center;
+	}
+
+	strong {
+		font-size: 14px;
+		color: #f53b3b;
+		margin: 0 3px;
 	}
 }
 
 /* wrapper */
 .wrapper {
-	height: 100%;
-	background-color: #f7f7f7;
-	padding: 20px 16px;
-	padding-bottom: 158px;
+	flex: 1;
 	overflow-y: auto;
+	margin-top: 60px;
+	background-color: #f7f7f7;
 
 	&.wrapper2 {
 		padding: 0 0 158px 0;
 	}
+
+	.pc {
+		display: flex;
+		align-items: center;
+		border-bottom: 2px solid #f4f4f4;
+		background-color: #fff;
+		padding: 17px 16px;
+
+		&>div {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex: 1;
+		}
+
+		.pc_title {
+			font-size: 18px;
+			font-weight: 500;
+			margin-left: 16px;
+		}
+	}
+}
+
+.inner_wrapper {
+	padding: 20px 16px;
 }
 
 /* nav */
 nav {
-	position: fixed;
-	bottom: 0;
-	z-index: 999;
-	max-width: 460px;
+	display: none;
 	width: 100%;
 	background-color: #fff;
 
@@ -313,7 +392,7 @@ nav {
 		position: absolute;
 		bottom: 0;
 		width: 100%;
-		max-width: 460px;
+		max-width: 600px;
 		color: #202020;
 		background-color: #fff;
 		border-radius: 20px 20px 0 0;
@@ -854,4 +933,54 @@ hr {
 .daterangepicker td.active:hover,
 .daterangepicker .ranges li.active {
 	background-color: #f53b3b !important;
+}
+
+@media (max-width: 960px) {
+	header {
+		left: auto;
+		max-width: 600px;
+		justify-content: space-between;
+		margin: auto;
+		background-color: #fff;
+
+		.logo {
+			display: none;
+		}
+
+		.mo {
+			display: flex;
+		}
+
+		.pc_wrap {
+			display: none;
+		}
+
+		.btn_wrap {
+			display: flex;
+		}
+
+		.chat_link {
+			background: url('../img/icon_main_black_chat.svg') no-repeat center;
+		}
+
+		.notification_btn {
+			background: url('../img/ico_alram.png') no-repeat center;
+
+			&.active {
+				&::after {
+					background-color: #f53b3b;
+				}
+			}
+		}
+	}
+
+	.wrapper {
+		.pc {
+			display: none;
+		}
+	}
+
+	nav {
+		display: block;
+	}
 }

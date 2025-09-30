@@ -49,50 +49,50 @@
 			color: #555;
 		}
 	}
-}
 
-.bidding_num {
-	font-size: 12px;
-	font-weight: bold;
-
-	&::before {
-		content: "";
-		width: 16px;
-		height: 12px;
-		display: inline-block;
-		margin-right: 9px;
-	}
-
-	&.red {
-		strong {
-			font-size: 20px;
-			color: #f53b3b;
-		}
+	.bidding_num {
+		font-size: 12px;
+		font-weight: bold;
 
 		&::before {
-			background: url('../img/ico-ticket.svg') no-repeat center;
-		}
-	}
-
-	&.green {
-		strong {
-			font-size: 14px;
-			color: #006e51;
+			content: "";
+			width: 16px;
+			height: 12px;
+			display: inline-block;
+			margin-right: 9px;
 		}
 
-		&::before {
-			background: url('../img/ico-ticket-02.svg') no-repeat center;
-		}
-	}
+		&.red {
+			strong {
+				font-size: 20px;
+				color: #f53b3b;
+			}
 
-	&.blue {
-		strong {
-			font-size: 14px;
-			color: #3b85f5;
+			&::before {
+				background: url('../img/ico-ticket.svg') no-repeat center;
+			}
 		}
 
-		&::before {
-			background: url('../img/ico-ticket-03.svg') no-repeat center;
+		&.green {
+			strong {
+				font-size: 14px;
+				color: #006e51;
+			}
+
+			&::before {
+				background: url('../img/ico-ticket-02.svg') no-repeat center;
+			}
+		}
+
+		&.blue {
+			strong {
+				font-size: 14px;
+				color: #3b85f5;
+			}
+
+			&::before {
+				background: url('../img/ico-ticket-03.svg') no-repeat center;
+			}
 		}
 	}
 }

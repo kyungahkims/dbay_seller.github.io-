@@ -15,86 +15,114 @@
 <body>
 	<div class="wrap">
 		<header>
-			<h2>견적요청</h2>
-			<div>
+			<div class="flex-c">
+				<a href="#" class="logo"><img src="../img/logo-dbay.png" alt="디베이, 전자제품 최저가 견적"></a>
+				<div class="mo">
+					<a href="#" class="before_page" aria-label="이전 페이지"></a>
+					<h2>견적요청</h2>
+				</div>
+			</div>
+			<ul class="pc_wrap">
+				<li class="active"><a href="#">홈</a></li>
+				<li><a href="#">견적요청</a></li>
+				<li><a href="#">자동입찰</a></li>
+				<li><a href="#">통계</a></li>
+				<li><a href="#">MY</a></li>
+				<li>
+					<a href="#" aria-label="채팅" class="chat_link"></a>
+					<a href="#" aria-label="알림" class="notification_btn active"></a>
+				</li>
+			</ul>
+			<div class="btn_wrap">
 				<span class="bidding_num red">총<strong>300</strong>개</span>
-				<button type="button" aria-label="알림 확인 버튼" class="notification_btn active"><img src="../img/ico_alram.png"
-						alt="알림"></button>
+				<a href="#" aria-label="채팅" class="chat_link"></a>
+				<a href="#" aria-label="알림" class="notification_btn active"></a>
 			</div>
 		</header><!-- header -->
 		<div class="wrapper">
-			<ul class="box_wrap">
-				<li>
-					<div>참여중</div><strong>250</strong>건
-				</li>
-				<li>
-					<div>상담중</div><strong>18</strong>건
-				</li>
-				<li>
-					<div>계약완료</div><strong>180</strong>건
-				</li>
-			</ul>
-			<div class="filter_wrap">
-				<!-- <div class="check"><input type="checkbox" id="checkbox"><label for="checkbox">등록상품만 노출</label></div> -->
-				<p class="info">※ 최근 30일 요청 건만 보여집니다.</p>
+			<div class="pc">
 				<div>
-					<button type="button" class="change_btn">입찰 상품 설정</button>
-					<button type="button" class="filter_btn" aria-label="선택 필터 버튼">최신순</button>
+					<div class="flex-c">
+						<a href="#" class="before_page" aria-label="이전 페이지"></a>
+						<h2 class="pc_title">견적요청</h2>
+					</div>
+					<span class="bidding_num red">총<strong>300</strong>개</span>
 				</div>
 			</div>
-			<ul class="box_list">
-				<li class="box">
-					<div class="product_wrap">
-						<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
-						<ul class="product_info">
-							<li class="product_name"><strong>아이폰15</strong><span class="label">남은시간<span>47:59:59</span></span></li>
-							<li><span class="name">모델번호</span>U132806471</li>
-							<li><span class="name">모델색상</span>
-								<div class="color_group"><span class="color pink" aria-label="분홍색" role="img"></span></div>
-							</li>
-							<li><span class="name">구매유형</span>번호이동</li>
-							<li><span class="name">월요금제</span>2~3만원대 (지원금이 작아요)</li>
-						</ul>
+			<div class="inner_wrapper">
+				<ul class="box_wrap">
+					<li>
+						<div>참여중</div><strong>250</strong>건
+					</li>
+					<li>
+						<div>상담중</div><strong>18</strong>건
+					</li>
+					<li>
+						<div>계약완료</div><strong>180</strong>건
+					</li>
+				</ul>
+				<div class="filter_wrap">
+					<!-- <div class="check"><input type="checkbox" id="checkbox"><label for="checkbox">등록상품만 노출</label></div> -->
+					<p class="info">※ 최근 30일 요청 건만 보여집니다.</p>
+					<div>
+						<button type="button" class="change_btn">입찰 상품 설정</button>
+						<button type="button" class="filter_btn" aria-label="선택 필터 버튼">최신순</button>
 					</div>
-					<p class="date">요청일<span>2024.07.26</span></p>
-					<p class="date red">마감일<span>2024.07.26</span></p>
-					<button type="button" class="send_btn">견적보내기</button>
-				</li>
-				<li class="box">
-					<div class="product_wrap">
-						<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
-						<ul class="product_info">
-							<li class="product_name"><strong>아이폰15</strong><span class="label end">견적마감</span></li>
-							<li><span class="name">모델번호</span>U132806471</li>
-							<li><span class="name">모델색상</span>
-								<div class="color_group"><span class="color pink" aria-label="분홍색" role="img"></span></div>
-							</li>
-							<li><span class="name">구매유형</span>번호이동</li>
-							<li><span class="name">월요금제</span>2~3만원대 (지원금이 작아요)</li>
-						</ul>
-					</div>
-					<p class="date">요청일<span>2024.07.26</span></p>
-					<p class="date red">마감일<span>2024.07.26</span></p>
-					<button type="button" class="send_btn">견적보내기</button>
-				</li>
-				<li class="box">
-					<div class="product_wrap">
-						<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
-						<ul class="product_info">
-							<li class="product_name"><strong>아이폰15</strong><span class="label end">남는시간</span></li>
-							<li><span class="name">모델번호</span>U132806471</li>
-							<li><span class="name">모델색상</span>
-								<div class="color_group"><span class="color pink" aria-label="분홍색" role="img"></span></div>
-							</li>
-							<li><span class="name">구매유형</span>번호이동</li>
-							<li><span class="name">월요금제</span>2~3만원대 (지원금이 작아요)</li>
-						</ul>
-					</div>
-					<p class="date">요청일<span>2024.07.26</span></p>
-					<p class="date red">마감일<span>2024.07.26</span></p>
-					<button type="button" class="send_btn">견적보내기</button>
-				</li>
-			</ul>
+				</div>
+				<ul class="box_list">
+					<li class="box">
+						<div class="product_wrap">
+							<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
+							<ul class="product_info">
+								<li class="product_name"><strong>아이폰15</strong><span class="label">남은시간<span>47:59:59</span></span></li>
+								<li><span class="name">모델번호</span>U132806471</li>
+								<li><span class="name">모델색상</span>
+									<div class="color_group"><span class="color pink" aria-label="분홍색" role="img"></span></div>
+								</li>
+								<li><span class="name">구매유형</span>번호이동</li>
+								<li><span class="name">월요금제</span>2~3만원대 (지원금이 작아요)</li>
+							</ul>
+						</div>
+						<p class="date">요청일<span>2024.07.26</span></p>
+						<p class="date red">마감일<span>2024.07.26</span></p>
+						<button type="button" class="send_btn">견적보내기</button>
+					</li>
+					<li class="box">
+						<div class="product_wrap">
+							<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
+							<ul class="product_info">
+								<li class="product_name"><strong>아이폰15</strong><span class="label end">견적마감</span></li>
+								<li><span class="name">모델번호</span>U132806471</li>
+								<li><span class="name">모델색상</span>
+									<div class="color_group"><span class="color pink" aria-label="분홍색" role="img"></span></div>
+								</li>
+								<li><span class="name">구매유형</span>번호이동</li>
+								<li><span class="name">월요금제</span>2~3만원대 (지원금이 작아요)</li>
+							</ul>
+						</div>
+						<p class="date">요청일<span>2024.07.26</span></p>
+						<p class="date red">마감일<span>2024.07.26</span></p>
+						<button type="button" class="send_btn">견적보내기</button>
+					</li>
+					<li class="box">
+						<div class="product_wrap">
+							<div class="product_img"><img src="../img/img_phone.png" alt="아이폰15"></div>
+							<ul class="product_info">
+								<li class="product_name"><strong>아이폰15</strong><span class="label end">남는시간</span></li>
+								<li><span class="name">모델번호</span>U132806471</li>
+								<li><span class="name">모델색상</span>
+									<div class="color_group"><span class="color pink" aria-label="분홍색" role="img"></span></div>
+								</li>
+								<li><span class="name">구매유형</span>번호이동</li>
+								<li><span class="name">월요금제</span>2~3만원대 (지원금이 작아요)</li>
+							</ul>
+						</div>
+						<p class="date">요청일<span>2024.07.26</span></p>
+						<p class="date red">마감일<span>2024.07.26</span></p>
+						<button type="button" class="send_btn">견적보내기</button>
+					</li>
+				</ul>
+			</div>
 		</div><!-- wrapper -->
 		<nav>
 			<ul>

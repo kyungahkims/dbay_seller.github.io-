@@ -13,9 +13,8 @@
 		}
 
 		&.notice_sel {
-			position: fixed;
 			width: 100%;
-			max-width: 460px;
+			max-width: 600px;
 			border-top: 1px solid #f4f4f4;
 			border-bottom: 1px solid #f4f4f4;
 			background-color: #fff;
@@ -126,5 +125,11 @@
 			height: auto;
 			margin-bottom: 16px;
 		}
+	}
+}
+
+@media (max-width: 960px) {
+	.notice_sel {
+		position: fixed;
 	}
 }
