@@ -17,7 +17,7 @@ $('.menu_wrap li').click(function () {
 });
 
 /* modal 닫기 */
-$('.sel_btn, .btn_wrap button, .modal_wrap, .modal_wrap2').click(function () {
+$('.sel_btn, .btn_wrap button, .modal_wrap, .modal_wrap2, .close_btn').click(function () {
 	$('.modal_wrap, .modal_wrap2, .modal_wrap3').css('display', 'none');
 });
 
@@ -118,11 +118,15 @@ $('.info_box button').click(function () {
 
 /* 공지사항 상세 타이틀 높이 값 */
 function onResize() {
-	$(".notice_cont").css("padding-top", $(".notice_sel").outerHeight() + 20 + "px");
+	if ($(window).width() < 960) {
+		$(".notice_cont").css("padding-top", $(".notice_sel").outerHeight() + 20 + "px");
+	} else {
+
+		$(".notice_cont").css("padding-top", "20px");
+	}
 }
 
 $(window).resize(onResize).trigger("resize");
-
 
 /* 검색 */
 $('.pop').click(function () {
@@ -146,7 +150,13 @@ $('.question_wrap').click(function (e) {
 	e.stopPropagation();
 });
 
-/* 견적 보내기 카드 결합 체크박스 */
+/* header pc */
+$('header .pc_wrap li').click(function () {
+	$('header .pc_wrap li').removeClass('active');
+	$(this).addClass('active');
+});
+
+/* 견적 보내기 카드 결합 체크 박스 */
 $('.estimate_box2 #checkbox').on('change', function () {
 	if ($(this).is(':checked')) {
 		$('.card_plus, .plus_btn, .cont').css('display', 'block');
